@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".ConnectSettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:navigationIconTint="@color/white"
+            app:title="Connect to Device"
+            app:titleTextColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search for display devices"
+            android:textColor="@color/text_light"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search for a display device to a TV or other display device."
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/card_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screencast display"
+            android:textColor="@color/accent_orange"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchHideNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hide notifications"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hide notifications and incoming calls on the display device."
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="-16dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchContinueCasting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screen-casting will continue"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screen-casting will continue when the screen is off."
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="-16dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchSmartNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart notification"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When Bluetooth is turned on, your phone will search..."
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="-16dp" />
+
+    </LinearLayout>
+</ScrollView>

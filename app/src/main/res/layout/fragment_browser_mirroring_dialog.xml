@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded_top">
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="240dp"
+        android:background="@color/card_background"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browser Mirroring"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Screen share to ChromeBook, PC, PS4... (Screen only, no audio)"
+            android:textColor="@color/text_light" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="291dp"
+            android:layout_height="114dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#33FFFFFF"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_cast"
+                app:tint="@color/accent_orange" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="259dp"
+        android:background="#2E2B3A"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Watch a short video to unlock for free or Join All Mirror Pro to enjoy lifetime access."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWatchAd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:text="Watch Ad"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/accent_orange"
+            app:cornerRadius="30dp"
+            app:icon="@drawable/ic_play"
+            app:iconPadding="12dp"
+            app:iconTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="or"
+            android:textColor="@color/text_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnJoinPro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_pro_button_gradient"
+            android:text="Join Pro"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:cornerRadius="30dp"
+            app:icon="@drawable/ic_crown"
+            app:iconPadding="12dp"
+            app:iconTint="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

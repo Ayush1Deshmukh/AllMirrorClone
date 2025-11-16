@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainHubFragment">
+
+    <fragment
+        android:id="@+id/mainHubFragment"
+        android:name="com.example.allmirrorclone.MainHubFragment"
+        android:label="fragment_main_hub"
+        tools:layout="@layout/fragment_main_hub" >
+        <action
+            android:id="@+id/action_mainHubFragment_to_proPurchaseFragment"
+            app:destination="@id/proPurchaseFragment" />
+        <action
+            android:id="@+id/action_mainHubFragment_to_connectSettingsFragment"
+            app:destination="@id/connectSettingsFragment" />
+        <action
+            android:id="@+id/action_mainHubFragment_to_tutorialPageFragment"
+            app:destination="@id/tutorialPageFragment" />
+        <action
+            android:id="@+id/action_mainHubFragment_to_tutorialFaqFragment"
+            app:destination="@id/tutorialFaqFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialPageFragment"
+        android:name="com.example.allmirrorclone.TutorialPageFragment"
+        android:label="fragment_tutorial_page"
+        tools:layout="@layout/fragment_tutorial_page" />
+    <fragment
+        android:id="@+id/connectSettingsFragment"
+        android:name="com.example.allmirrorclone.ConnectSettingsFragment"
+        android:label="fragment_connect_settings"
+        tools:layout="@layout/fragment_connect_settings" />
+    <fragment
+        android:id="@+id/proPurchaseFragment"
+        android:name="com.example.allmirrorclone.ProPurchaseFragment"
+        android:label="fragment_pro_purchase"
+        tools:layout="@layout/fragment_pro_purchase" />
+    <fragment
+        android:id="@+id/tutorialFaqFragment"
+        android:name="com.example.allmirrorclone.TutorialFaqFragment"
+        android:label="fragment_tutorial_faq"
+        tools:layout="@layout/fragment_tutorial_faq" />
+</navigation>
